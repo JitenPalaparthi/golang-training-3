@@ -60,3 +60,11 @@ GOOS=windows GOARCH=amd64 go build -ldflags="-s -w" -o build/hello_small main.go
 ### Golang Presentation
 
 https://docs.google.com/presentation/d/1WVvsbvgHKBrNrKtnT4XWRfrsfkNlbw5u6L9O1DeVBn0/edit?usp=sharing
+
+### Variable declaration
+
+- Code/Text Segment --> binary is loaded into this segment, consts are loaded into code segment
+- Data Segment      --> all global(package) variables(static) are loaded into data segment
+
+- Stack Memory      --> stack memory, generally all local variables, complier writes the code based on blocks
+- Heap Memory       --> variables on heap, by GC
