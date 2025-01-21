@@ -24,10 +24,11 @@ go build -o hello main.go
 ```
 
 
-### Builtin functions
+### Builtin functions (18)
+complx, len, print, println
 
+### Keywords (25)
 
-### Keywords
 
 ### go env
 
