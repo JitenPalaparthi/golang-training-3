@@ -25,7 +25,7 @@ go build -o hello main.go
 
 
 ### Builtin functions (18)
-complx, len, print, println
+append,cap,clear,copy,complx, len, make,print, println
 
 ### Keywords (25)
 
