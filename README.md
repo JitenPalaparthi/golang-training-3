@@ -57,6 +57,11 @@ GOOS=windows GOARCH=amd64 go build -o build/hello_windows_amd64.exe main.go
 GOOS=windows GOARCH=amd64 go build -ldflags="-s -w" -o build/hello_small main.go
 ```
 
+### escape analysis
+
+```bash
+go build -gcflags="-m" main.go
+```
 
 ### Golang Presentation
 
