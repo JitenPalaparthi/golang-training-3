@@ -33,13 +33,22 @@ func main() {
 		sum += v
 	}
 	println(sum)
-
+	// var sum2 any
+	// for _, v := range arr2 {
+	// 	//sum2 += v
+	// }
 	// arr2[0] = int(100)
 	// arr2[1] = float32(123.23)
 	// arr2[2] = float64(123.23)
 	// arr2[3] = int64(123123)
 	// arr2[4] = uint8(255)
 	// Find out the sum of elements
+
+	// a1, _ := calc(100, 200)
+	// println("addition", a1)
+
+	// _, s1 := calc(100, 200)
+	// println("sub", s1)
 }
 
 // array
@@ -48,3 +57,7 @@ func main() {
 // string header
 // Ptr --> Pointer to the actual store
 // Len
+
+func calc(a, b int) (int, int) {
+	return a + b, a - b
+}
