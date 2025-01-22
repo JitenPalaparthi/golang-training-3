@@ -24,11 +24,11 @@ go build -o hello main.go
 ```
 
 
-### Builtin functions (18)
-append,cap,clear,copy,complx, len, make,print, println
+### Builtin functions (15 of 18)
+append,cap,clear,copy,complex,delete,imag,len,make,max,min,new,print,println,real,
 
 ### Keywords (25)
-
+break,case,const,continue,default,else,for,func,goto,if,import,map,package,range,return,struct,switch,type, var (19 of 25)
 
 ### go env
 
