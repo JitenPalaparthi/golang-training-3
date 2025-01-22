@@ -28,7 +28,7 @@ go build -o hello main.go
 append,cap,clear,copy,complex,delete,imag,len,make,max,min,new,print,println,real,
 
 ### Keywords (25)
-break,case,const,continue,default,else,for,func,goto,if,import,map,package,range,return,struct,switch,type, var (19 of 25)
+break,case,const,continue,default,else,fallthrough,for,func,goto,if,import,interface,map,package,range,return,struct,switch,type, var (21 of 25)
 
 ### go env
 
