@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand/v2"
+)
 
 func main() {
 	var ishapes []IShape
@@ -12,6 +15,16 @@ func main() {
 	for _, v := range ishapes {
 		Shape(v)
 	}
+
+	for i := 1; i <= 10; i++ {
+		r := rand.IntN(8)
+		Shape(ishapes[r])
+	}
+
+	var ishape1 IShape = NewRect(10, 20)
+	ishape1.Area()
+	var r Rect
+	r.Area()
 
 }
 
