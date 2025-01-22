@@ -1,6 +1,6 @@
 
-1. Binary 
-2. Library
+1. Binary  
+2. Library/packages 
 
 ### Creating a module
 
@@ -74,3 +74,10 @@ https://docs.google.com/presentation/d/1WVvsbvgHKBrNrKtnT4XWRfrsfkNlbw5u6L9O1DeV
 
 - Stack Memory      --> stack memory, generally all local variables, complier writes the code based on blocks
 - Heap Memory       --> variables on heap, by GC
+
+
+### go get to fetch other packages
+
+```bash
+go get github.com/JitenPalaparthi/icici-shapes-package3
+```
