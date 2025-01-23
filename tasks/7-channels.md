@@ -13,7 +13,7 @@ send chCube <-
 
 receiver receives the values from chCub and print
 
-chSq <- i
+chSq <- i*i
 
 c:= <- chSq
 println(c)
