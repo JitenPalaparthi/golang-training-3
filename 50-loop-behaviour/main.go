@@ -1,25 +1,31 @@
 package main
 
-import "fmt"
-
 func main() {
-	for i := 0; i <= 10; i++ {
-		func() {
-			fmt.Println(i)
-		}()
+	funcs1 := make([]func(), 0)
+
+	for i := 1; i <= 5; i++ {
+		funcs1 = append(funcs1, func() {
+			println(i)
+		})
 	}
 
-	fmt.Println("using goto")
+	for _, v := range funcs1 {
+		v()
+	}
 
-	i := 1
+	i := 0
+	funcs2 := make([]func(int), 0)
 loop:
-	func() {
-		k := i * 10
-		fmt.Println(k)
-	}()
 	i++
-	if i <= 10 {
+	funcs2 = append(funcs2, func(j int) {
+		println(j)
+	})
+	if i <= 5 {
 		goto loop
 	}
-
+	for i, v := range funcs2 {
+		v(i)
+	}
 }
+
+// <1.22

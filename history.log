@@ -1,0 +1,16 @@
+ 1792  clear
+ 1793  go run .
+ 1794  clear
+ 1795  go run .
+ 1796  clear
+ 1797  go run .
+ 1798  clear
+ 1799  go run .
+ 1800  clear
+ 1801  cd ..
+ 1802  clear
+ 1803  git add *
+ 1804  git commit -m "add more examples"
+ 1805  clear
+ 1806  git push
+ 1807  clear
