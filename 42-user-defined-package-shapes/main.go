@@ -1,32 +1,37 @@
 package main
 
 import (
-	"fmt"
-	"shapes/shape"
-	"shapes/shape/rect"
-	"shapes/shape/square"
+	. "fmt"
+	a "shapes/shape"
+	rectangle "shapes/shape/rect"
+	c "shapes/shape/square"
+	. "time"
 )
 
+func init() {
+	println("main package is called-1")
+}
+
 func main() {
-	r1 := rect.NewRect(10.12, 123.23)
-	s1 := square.NewSquare(100.23)
-	shape.PrintShape(r1)
-	shape.PrintShape(s1)
+	r1 := rectangle.NewRect(10.12, 123.23)
+	s1 := c.NewSquare(100.23)
+	a.PrintShape(r1)
+	a.PrintShape(s1)
 
-	var ishape shape.IShape = r1
+	var ishape a.IShape = r1
 
-	var r2 *rect.Rect = ishape.(*rect.Rect) // type assertion
-	fmt.Println(r2)
-	ishape = square.NewSquare(123.23)
+	var r2 *rectangle.Rect = ishape.(*rectangle.Rect) // type assertion
+	Println(r2)
+	ishape = c.NewSquare(123.23)
 	switch s := ishape.(type) {
-	case *rect.Rect:
-		fmt.Println("captured in Rect case", s)
-	case *square.Square:
-		fmt.Println("captured in *Square case", s)
-	case square.Square:
-		fmt.Println("captured in Square case", s)
+	case *rectangle.Rect:
+		Println("captured in Rect case", s)
+	case *c.Square:
+		Println("captured in *Square case", s)
+	case c.Square:
+		Println("captured in Square case", s)
 	}
-
+	Println(Now())
 }
 
 // to create a package , it should be inside a directory

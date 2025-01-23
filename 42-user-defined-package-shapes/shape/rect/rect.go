@@ -1,4 +1,11 @@
-package rect
+package rectangle
+
+func init() {
+	println("rect packaged is called-1")
+}
+func init() {
+	println("rect packaged is called-2")
+}
 
 var (
 	something string

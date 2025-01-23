@@ -1,6 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand/v2"
+)
+
+var G = rand.IntN(100)
+
+var G1 = func(i int) int {
+	return i * i
+}(10)
+
+var G2 int
+
+func init() {
+	G2 = func(i int) int {
+		return i * i
+	}(10)
+	println(G1, G2)
+}
 
 func main() {
 	fmt.Println("Hey")

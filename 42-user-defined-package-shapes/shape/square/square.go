@@ -1,5 +1,9 @@
 package square
 
+func init() {
+	println("square packaged is called-1")
+}
+
 type Square float32
 
 func NewSquare(s float32) Square {

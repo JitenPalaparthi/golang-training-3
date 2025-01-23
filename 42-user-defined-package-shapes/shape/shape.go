@@ -2,6 +2,10 @@ package shape
 
 import "fmt"
 
+func init() {
+	println("shape packaged is called-1")
+}
+
 type IShape interface {
 	Area() float32
 	Perimeter() float32

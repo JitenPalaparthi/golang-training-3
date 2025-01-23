@@ -1,4 +1,4 @@
-package rect
+package rectangle
 
 import "fmt"
 
