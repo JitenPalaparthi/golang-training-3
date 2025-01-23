@@ -28,7 +28,7 @@ go build -o hello main.go
 append,cap,clear,copy,complex,delete,imag,len,make,max,min,new,panic,print,println,real,recover
 
 ### Keywords (25)
-break,case,const,continue,default,defer,else,fallthrough,for,func,goto,if,import,interface,map,package,range,return,struct,switch,type, var (22 of 25)
+break,case,const,continue,default,defer,else,fallthrough,for,func,go,goto,if,import,interface,map,package,range,return,struct,switch,type, var (23 of 25)
 
 ### go env
 
@@ -81,3 +81,4 @@ https://docs.google.com/presentation/d/1WVvsbvgHKBrNrKtnT4XWRfrsfkNlbw5u6L9O1DeV
 ```bash
 go get github.com/JitenPalaparthi/icici-shapes-package3
 ```
+

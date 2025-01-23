@@ -49,3 +49,5 @@ func Decr(wg *sync.WaitGroup) {
 	}()
 	wg.Done()
 }
+
+// Do not communicate by sharing memory; instead, share memory by communicating.
