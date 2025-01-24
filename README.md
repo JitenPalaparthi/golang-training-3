@@ -82,3 +82,32 @@ https://docs.google.com/presentation/d/1WVvsbvgHKBrNrKtnT4XWRfrsfkNlbw5u6L9O1DeV
 go get github.com/JitenPalaparthi/icici-shapes-package3
 ```
 
+
+### To test a pacakge
+
+```bash
+go test demo/models
+```
+### To run the single test
+
+```bash
+go test -timeout 30s -run ^TestUserValidateSuccess$ demo/models
+```
+
+### To run all tests in a file
+
+```bash
+go test -timeout 30s -run ^(TestUserValidateSuccess|TestUserValidateNameFailure|TestUserValidateEmailFailure|TestUserToBytes|TestUserToString)$ demo/models
+```
+
+### Cover Profile
+
+```bash
+go test -coverprofile=coverage.out demo/models
+```
+### To see the coverage using html format
+
+
+```bash
+go tool cover -html coverage.out
+```

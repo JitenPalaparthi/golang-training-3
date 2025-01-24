@@ -1,0 +1,17 @@
+mode: set
+demo/models/user.go:18.33,19.18 1 1
+demo/models/user.go:19.18,21.3 1 1
+demo/models/user.go:22.2,22.19 1 1
+demo/models/user.go:22.19,24.3 1 1
+demo/models/user.go:25.2,25.12 1 1
+demo/models/user.go:28.42,30.2 1 1
+demo/models/user.go:32.34,35.2 2 1
+demo/models/userlogin.go:13.38,14.23 1 0
+demo/models/userlogin.go:14.23,16.3 1 0
+demo/models/userlogin.go:17.2,17.19 1 0
+demo/models/userlogin.go:17.19,19.3 1 0
+demo/models/userlogin.go:20.2,20.12 1 0
+demo/models/userlogin.go:23.47,25.2 1 0
+demo/models/userlogin.go:27.39,29.16 2 0
+demo/models/userlogin.go:29.16,31.3 1 0
+demo/models/userlogin.go:32.2,32.18 1 0

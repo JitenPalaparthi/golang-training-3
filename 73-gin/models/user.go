@@ -30,9 +30,6 @@ func (u *User) ToBytes() ([]byte, error) {
 }
 
 func (u *User) ToString() string {
-	b, err := u.ToBytes()
-	if err != nil {
-		return ""
-	}
+	b, _ := u.ToBytes()
 	return string(b)
 }
