@@ -3,14 +3,28 @@ package main
 import (
 	"demo/handlers"
 	"flag"
-	"fmt"
 	"log"
 	"net/http"
 	"os"
 	"runtime"
 )
 
+// const (
+// 	Active = iota + 10
+// 	Inactive
+// 	Running
+// 	Paused
+// 	Resumed
+// )
+
 func main() {
+	file, err := os.OpenFile("log.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+	log.SetOutput(file)
+	log.SetFlags(log.Ldate | log.Lshortfile)
 	port := os.Getenv("PORT")
 	//isFilebased := false
 	if port == "" {
@@ -19,7 +33,7 @@ func main() {
 		flag.Parse()
 	}
 
-	fmt.Println(os.Args)
+	log.Println(os.Args)
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Hello ICICI Direct"))
@@ -31,6 +45,7 @@ func main() {
 	http.HandleFunc("/user", handlers.CreateUser)
 
 	log.Println("Server started and listening on port ->" + port)
+	println("Server started and listening on port ->" + port)
 	if err := http.ListenAndServe(":"+port, nil); err != nil {
 		log.Println(err.Error())
 		runtime.Goexit()

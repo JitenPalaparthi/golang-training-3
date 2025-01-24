@@ -1,0 +1,5 @@
+2025/01/24 main.go:36: [/var/folders/rs/kkl0cpr51t574sdxt7hc7fth0000gn/T/go-build3205596951/b001/exe/main --port=30090]
+2025/01/24 main.go:47: Server started and listening on port ->30090
+2025/01/24 main.go:36: [/var/folders/rs/kkl0cpr51t574sdxt7hc7fth0000gn/T/go-build3288282207/b001/exe/demo]
+2025/01/24 main.go:47: Server started and listening on port ->8086
+2025/01/24 main.go:50: listen tcp :8086: bind: address already in use
